@@ -1,3 +1,18 @@
+# IMPORTANTE
+
+# Author : Jaime Angel
+
+## Hay dos archivos main.py y main2.py.
+
+### El primero main.py es un trabajo en el cual se hace todos los test,
+sin embargo, 3 de esos test fallaran porque dependen de la hora del dia,
+y solamente uno pasara. Porque es la unica correcta posible.
+
+### El segundo main2.py es un test que permite testear cada uno de los
+posibles casos, pasando como argumento una hora especifica. De manera que todos los test pasan.
+
+
+
 # Reto Curso Django - Ada School
 ## Reto tomado de wix/tdd-katas
 
