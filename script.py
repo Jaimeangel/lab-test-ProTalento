@@ -4,11 +4,8 @@ from datetime import datetime
 class Greeter:
     def greet(self, name):
         # Trim input
-        trimmed_name = name.strip()
-
-        # Capitalize first letter of the name
-        capitalized = trimmed_name[0].upper() + trimmed_name[1:]
-
+        trimmed_name = name.strip().capitalize()
+        greeting=''
         # Get current time
         now = datetime.now()
         hour = now.hour
@@ -24,8 +21,9 @@ class Greeter:
             greeting = 'Hello'
 
         # Construct the greeting message with both "Hello" and the time-based greeting
-        message = greeting +' '+ capitalized
+        message = f"{greeting} {trimmed_name}"
         # Return the message
+        print(message)
         return message
 
 # Dependiendo de la hora del dia el saludo sera diferente
